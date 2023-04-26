@@ -2,17 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bytestream;
+package bytestream1;
+
+import java.io.Serializable;
 
 /**
  *
  * @author Student
  */
-public class Rectangle implements Shape {
+public class Student implements Serializable {
 
-    @Override
-    public void draw() {
-        System.out.println("Shape: Rectangle");
+    String id;
+    String name;
+
+    public Student(String id, String name) {
+        this.id = id;
+        this.name = name;
     }
-    
 }
